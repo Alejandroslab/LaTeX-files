@@ -1,2 +1,2 @@
 # LaTeX-files
-LatTex working.
+LaTex working.
