@@ -1,0 +1,11 @@
+Just use \\ inside of section {}
+
+for example
+
+\section{ blablablabla \\ blablabla}
+
+or you can try to force with ~ (you can add as many tilde you want)
+
+\section{ blablablabla ~~~~blablabla}
+
+In my case it did not work so I used the first solutions

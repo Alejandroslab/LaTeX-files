@@ -1,0 +1,17 @@
+{\displaystyle =\,}	=	is equal to
+{\displaystyle \doteq } {\displaystyle \doteq }	\doteq	 
+{\displaystyle \equiv } {\displaystyle \equiv }	\equiv	is equivalent to
+{\displaystyle \approx } {\displaystyle \approx }	\approx	is approximately
+{\displaystyle \cong } {\displaystyle \cong }	\cong	is congruent to
+{\displaystyle \simeq } {\displaystyle \simeq }	\simeq	is similar or equal to
+{\displaystyle \sim } {\displaystyle \sim }	\sim	is similar to
+{\displaystyle \propto } {\displaystyle \propto }	\propto	is proportional to
+{\displaystyle \neq } {\displaystyle \neq } or {\displaystyle \neq } {\displaystyle \neq }	\neq or \ne	is not equal to
+
+
+for example in order to use double tilde ~ as 'approximation' instead of equal '='
+use:
+
+\approx{math expression}
+
+https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols

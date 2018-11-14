@@ -1,0 +1,40 @@
+\documentclass[10pt, oneside]{article}   	
+
+\usepackage{actuarialangle}
+\usepackage{actuarialsymbol}
+\usepackage{mathtools}
+\usepackage{amsmath}
+							
+\usepackage[english,italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc} 
+
+
+					
+\begin{document}
+
+
+\author{Alejandroslab}
+\title{Formulas}
+\date{09/11/2018}
+\maketitle 
+
+
+
+\section{Capitale Differito}
+
+\begin{equation}
+\sum_{k=1}^n I_k = 0
+\end{equation}
+
+\[
+\px[t]{x}[\joint{22}] = exp{(-t \sum_{j=2}^7 \mu_x^{2j} )}
+\]
+
+Esercizio 2 
+\begin{equation}
+\frac{\partial }{\partial t}\px[t]{x}[23] = \px[t]{x}[22] \mu_{x+t}^{23}
+\end{equation}
+
+
+\end{document}  

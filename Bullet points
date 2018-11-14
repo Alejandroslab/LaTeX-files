@@ -1,0 +1,12 @@
+You can use
+\begin{itemize}
+text
+
+\begin{equation}
+
+\end{equation}
+
+
+\end{itemize}
+
+you can nest equations as well
