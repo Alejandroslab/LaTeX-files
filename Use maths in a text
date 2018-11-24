@@ -1,0 +1,10 @@
+In order to cite a formula while writing pure text (no begin{equation} end {equation})
+
+The simpliest is using $ at the beginning and at the ending 
+$\ax**{x}$
+
+other solution
+
+\( \ax**{x} \) 
+
+where \ax**{x} is an annuity due coming from actuarialsymbols package.

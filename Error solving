@@ -1,0 +1,12 @@
+While writing an equation as:
+
+\begin{equation}
+2x=3
+\end{equation}
+
+never leave empty spaces or blank spaces because you could get an error
+
+\begin{equation}
+2x=3
+       %don't leave this space for example
+\end{equation}
