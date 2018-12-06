@@ -1,0 +1,35 @@
+first load these two packages:
+
+
+\usepackage{booktabs}
+\usepackage{caption}
+
+for maths use array:
+
+\[
+\begin{array}{ll}
+\toprule
+f(x)   & f'(x) \\
+\midrule
+x^n    & nx^{n-1} \\
+e^x    & e^x \\
+\sin x & \cos x \\
+\bottomrule
+\end{array}
+\]
+
+
+for text you use tabular
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Alcaloide & Origine \\
+\midrule
+atropina  & belladonna \\
+morfina   & papavero \\
+nicotina  & tabacco \\
+\bottomrule
+\end{tabular}
+\end{center}
+
