@@ -1,0 +1,19 @@
+You have 3 options with the default latex package : plain, headings or myheadings
+
+-with plain you will get only the number of page at the foot center of the page
+-with headings you will have the title of the sections in which you are reading and the number of the page at the top right corner
+-with myheadings you will able to define the content of the heading and have the number of page at the top right corner
+
+With myheadings:
+\pagestyle{myheadings}
+\markright{Authors name}
+
+You can also try this that is the official alternative package to the default one
+(but the problem is that you will get an horrible line in the heading):
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\rhead{ \fancyplain{}{Authors name} }
+\cfoot{ \fancyplain{}{\thepage} }
