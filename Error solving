@@ -4,9 +4,9 @@ While writing an equation as:
 2x=3
 \end{equation}
 
-never leave empty spaces or blank spaces because you could get an error
+never leave empty spaces between lines inside the equation because you will get an eorr
 
 \begin{equation}
 2x=3
-       %don't leave this space for example
+  %<----------don't leave this space for example
 \end{equation}
