@@ -1,4 +1,6 @@
-This method works even with files that already exist. You don't have to change your code
+The cool thing about this is that bibliography  is correctly sorted alphabetically without having to do anything.
+
+This method works even with files that already exist. You don't have to change your code.
 Just add the packages, create the .bib file and apply the command 'biber' from terminal to the .bib file as explained below.
 
 Before doing a typeset remmeber to save as TeXShop does not take in account the modifications until you save it.
@@ -7,7 +9,9 @@ You have to use the 'biber' command for every \cite that you are inserting if yo
 So it's convenient to first insert all the citations and then apply the 'biber' command once or twice instead of doing every
 single time.
 
-Remmeber: you cannot insert comments in the .bib file!
+Remmeber: you cannot insert comments in the .bib file and be careful about punctuation!
+
+
 
 ______
 
