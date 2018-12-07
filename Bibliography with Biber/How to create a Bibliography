@@ -46,12 +46,15 @@ We can see that there is one reference that will be invoked with the keyname 'ex
 5. Now reopen terminal as we have to do the magic trick in order to connect the .bib file to the LaTeX one.
 just type:
 
-biber Mars 2
+biber Mars\ 2
 
-You should get no errors and get a message like 'Ouput written in file Mars 2'.
+REMEMBER when you have spaces in the file name to use the symbol '\' to deal with that. 
+Then remember to not add the extension .bib in the command!
+You will see now that the process will recall the .blg and .bcf files.
+You should get no errors and get in the last line of the process this text: 'INFO - Ouput to file Mars 2.bbl'.
 If you get errors the bibliography will not appear.
 
-6. Run again LaTeX in you main latex file and will see the references correctly build up.
+6. Run again LaTeX in you main latex file  (you should do this just once even if sometimes this could be done twice probably) and finally will see the references correctly build up.
 
 You are done!
 
