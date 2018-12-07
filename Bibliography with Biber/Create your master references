@@ -1,0 +1,4 @@
+You have to use the 'biber' command for every \cite that you are inserting if you want to see it.
+So it's convenient to insert all the citations in the .bib file and then apply the 'biber' command once.
+
+So work to create your own .bib reference file. If you do it once than you can rely on it basically forever!
