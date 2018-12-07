@@ -18,7 +18,8 @@ ______
 In order to create a bibliography in an example file
 
 1.First create your folder that will contain your LaTeX files.
-Just call it 'Mars 2' to do an example. (It will called as the main file just to make things clearer)
+Just call it 'Mars 2' to do an example. It will called as the main file just to make things more easy but you can call the 
+folder differently. The important thing is that the files inside the folder must have all the same name (with different extension)
 
 2.Then create a new file on TeXShop an call it 'Mars 2'
 (The reason to use the name 'Mars 2' is due to the fact that LaTeX does not make difference if the name of the file contains spaces.)
