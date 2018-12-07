@@ -1,0 +1,64 @@
+In order to create a bibliography 
+
+1.First create your folder that will contain your LaTeX files.
+Just call it 'Mars 2' to do an example. (It will called as the main file just to make things clearer)
+
+2.Then create a new file on TeXShop an call it 'Mars 2'
+(The reason to use the name 'Mars 2' is due to the fact that LaTeX does not make difference if the name of the file contains spaces.)
+Insert this:
+
+\documentclass{article}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{Mars 2.bib} %<---- This will be necessary to connect this file 
+to the .bib file.
+
+\begin{document}
+
+Hello\cite{example}.  % \cite is a common command to make a citation. 'example' is a keyname that will invoke the reference from our .bib file.
+
+\printbibliography
+
+\end{document}
+
+3. Save it and run it at least once! (In TeXShop 'Typeset' command (cmd+T)) 
+This will create all the necessary files that later 'biber' command in Terminal will request (like .bcg, .bcf, etc..) 
+If they will not be found then you will get an error.
+
+3. Open again the folder with terminal (right click etc..)
+and create a new file .bib that will be called as the LaTeX file so in this case: 'Mars 2.bib'. This will be the bibliography file.
+
+REMEMBER: the folder in which you will put the .bib file must be the same of the LaTeX files.
+
+4. Open it and insert this code that is the basic code to build your references:
+
+@ARTICLE{example,
+  author  = {Other, Anthony Norman},
+  title   = {Some things I did},
+  year    = {2014},
+  journal = {J.~Irrep. Res.},
+  volume  = {1},
+  number  = {1},
+  pages   = {1-10}
+}
+
+We can see that there is one reference that will be invoked with the keyname 'example' (that is reported in the latex file).
+
+5. Now reopen terminal as we have to do the magic trick in order to connect the .bib file to the LaTeX one.
+just type:
+
+biber Mars 2
+
+You should get no errors and get a message like 'Ouput written in file Mars 2'.
+If you get errors the bibliography will not appear.
+
+6. Run again LaTeX in you main latex file and will see the references correctly build up.
+
+You are done!
+
+
+
+
+
+
+
+
