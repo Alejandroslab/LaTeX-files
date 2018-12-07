@@ -7,6 +7,8 @@ You have to use the 'biber' command for every \cite that you are inserting if yo
 So it's convenient to first insert all the citations and then apply the 'biber' command once or twice instead of doing every
 single time.
 
+Remmeber: you cannot insert comments in the .bib file!
+
 ______
 
 In order to create a bibliography in an example file
