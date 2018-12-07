@@ -1,4 +1,9 @@
-In order to create a bibliography 
+This method works even with files that already exist. You don't have to change your code
+Just add the packages, create the .bib file and apply the command 'biber' from terminal to the .bib file as explained below.
+
+______
+
+In order to create a bibliography in an example file
 
 1.First create your folder that will contain your LaTeX files.
 Just call it 'Mars 2' to do an example. (It will called as the main file just to make things clearer)
@@ -6,23 +11,32 @@ Just call it 'Mars 2' to do an example. (It will called as the main file just to
 2.Then create a new file on TeXShop an call it 'Mars 2'
 (The reason to use the name 'Mars 2' is due to the fact that LaTeX does not make difference if the name of the file contains spaces.)
 Insert this:
+_______________
 
 \documentclass{article}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{Mars 2.bib} %<---- This will be necessary to connect this file 
 to the .bib file.
 
+Save the file in the folder previously created that is 'Mars 2'
+
 \begin{document}
 
 Hello\cite{example}.  % \cite is a common command to make a citation. 'example' is a keyname that will invoke the reference from our .bib file.
 
-\printbibliography
+\printbibliography %this will print immediately the bibliography. It depends on the position so if you put this at the end of 
+%the document you will get the bibliography at the end.
 
 \end{document}
 
+____________
+
 3. Save it and run it at least once! (In TeXShop 'Typeset' command (cmd+T)) 
 This will create all the necessary files that later 'biber' command in Terminal will request (like .bcg, .bcf, etc..) 
-If they will not be found then you will get an error.
+If these files will not be found then you will get an error in terminal.
+(Remember: the engine that you will find in Preferences of TeXShop under Bibtex is 'bibtex'.
+If you change 'bibtex' to 'biber' as suggested in some pages on internet this method will not work)
+
 
 3. Open again the folder with terminal (right click etc..)
 and create a new file .bib that will be called as the LaTeX file so in this case: 'Mars 2.bib'. This will be the bibliography file.
@@ -30,6 +44,8 @@ and create a new file .bib that will be called as the LaTeX file so in this case
 REMEMBER: the folder in which you will put the .bib file must be the same of the LaTeX files.
 
 4. Open it and insert this code that is the basic code to build your references:
+
+_______________
 
 @ARTICLE{example,
   author  = {Other, Anthony Norman},
@@ -41,20 +57,28 @@ REMEMBER: the folder in which you will put the .bib file must be the same of the
   pages   = {1-10}
 }
 
-We can see that there is one reference that will be invoked with the keyname 'example' (that is reported in the latex file).
+___________________
+
+We can see that there is one reference that will be invoked with the keyname 'example' (that is also reported in the latex file).
 
 5. Now reopen terminal as we have to do the magic trick in order to connect the .bib file to the LaTeX one.
 just type:
 
 biber Mars\ 2
 
-REMEMBER when you have spaces in the file name to use the symbol '\' (not the '/') to deal with that. 
+REMEMBER: when you have spaces in the file name you have to use the symbol '\' (not the '/') to deal with that. 
 Then remember to not add the extension .bib in the command!
+
 You will see now that the process will recall the .blg and .bcf files.
-You should get no errors and get in the last line of the process this text: 'INFO - Ouput to file Mars 2.bbl'.
+You should get no errors and get in the last line of the process this text: 
+'INFO - Ouput to file Mars 2.bbl'.
+
 If you get errors the bibliography will not appear.
 
-6. Run again LaTeX in you main latex file  (you should do this just once even if sometimes this could be done twice probably) and finally will see the references correctly build up.
+6. Run again LaTeX in you main latex file  (you should do this just once even if sometimes it is said that this has to be done twice) 
+and finally you will see the references correctly build up.
+(\printbibliography is the command necessary to display the biblio. If you omit that even if you get no errors you will not be
+able to see the biblio.
 
 You are done!
 
