@@ -1,0 +1,16 @@
+use \\ at the end of the sentence
+
+First sentence\\
+Second sentence
+
+REMEMBER that if you leave a space between sentences then LaTex will indent the sentence
+So for exaxmple:
+
+First sentence\\
+
+Second sentence
+
+The result will be:
+
+First sentence
+  Second sentence
