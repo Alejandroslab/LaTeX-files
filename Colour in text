@@ -1,0 +1,3 @@
+\usepackage[dvipsnames]{xcolor}
+
+\textcolor{red}{My text}
