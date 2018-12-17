@@ -1,0 +1,18 @@
+\begin{tikzpicture}[thick]
+  \node[draw,rectangle] (a) {7};
+  \node[inner sep=0,minimum size=0,right of=a] (k) {}; % invisible node
+  \node[draw,rectangle,right of=k] (b) {8};
+  \node[draw,rectangle,below of=a] (c) {C};
+
+  % 1st pass: draw arrows
+  \draw[vecArrow] (a) to (b);
+  \draw[vecArrow] (k) |- (c);
+
+  % 2nd pass: copy all from 1st pass, and replace vecArrow with innerWhite
+  \draw[innerWhite] (a) to (b);
+  \draw[innerWhite] (k) |- (c);
+
+  % Note: If you have no branches, the 2nd pass is not needed
+\end{tikzpicture}
+
+
