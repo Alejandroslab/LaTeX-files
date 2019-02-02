@@ -95,6 +95,10 @@ able to see the biblio.
 
 You are done!
 
+You should put 
+\nocite{*} 
+in your latex in order to have all your bibliography without citing anything in the latex file
+
 
 
 
