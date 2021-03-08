@@ -1,0 +1,39 @@
+Install LaTeX in windows:
+
+first install tex live (it will take a long time to install..).
+this is necessary as it is included 'latexmk' package that is essential for the packages in Atom to work.
+
+TeXLive will also install a lot of LaTeX packages. Doing that you will not have to manually search and download the latex package you need
+You can see all the latex packages after installation in the 'TeX Live Manager' application. (this will not be valid if you install for example BasicTex)
+
+
+You will have to download TeX Live even if you are in Linux (in Mac you will have to download MacTex)
+
+After that in Atom download:
+
+'Latex' package to compile latex fiels inside Atom (https://atom.io/packages/latex) (package from tomasjo)
+'PDF View' package to preview the pdf files (you will be able to preview splitting the tabs)
+'Language-LaTeX' package (to highlighting in Atom. just to check syntax)
+
+after install everythiing, go to setting of package 'latex'
+
+flag the 'Build on save' option ----------------------> it will allow to build automatically after saving
+unflag the 'Open Result after Successful Build'-------> it will prevent from opening the file after building
+unflag 'Open Result in Background'--------------------> It will prevent to open the result in background
+in 'Output Directory' type build----------------------> It will create the directory 'build' inside your working folder in which will put the latex working files
+
+now open the settings of 'language-latex' and
+flag 'Soft Wrap'
+
+
+
+
+now you are ready!
+remember that you have first to create a file with extension '.tex' otherwise it will not be built correctly!
+
+after creating your file and saving, latex will automatically build the file.
+You will se a pdf in the project folder you can open it, splitting the screen:
+to do that
+click right on the pdf and select 'Split Right'
+
+Now you have your LaTeX editor right inside you Atom!
