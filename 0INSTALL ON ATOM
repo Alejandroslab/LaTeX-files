@@ -30,6 +30,7 @@ flag 'Soft Wrap'
 
 now you are ready!
 remember that you have first to create a file with extension '.tex' otherwise it will not be built correctly!
+(it will appear the error 'the file does not appear to be as valid source file')
 
 after creating your file and saving, latex will automatically build the file.
 You will se a pdf in the project folder you can open it, splitting the screen:
