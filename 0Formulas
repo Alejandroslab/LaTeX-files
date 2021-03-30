@@ -1,0 +1,3 @@
+\tilde{U} = (1+j) \cdot \tilde{U}_{t-1} + [B_t - \tilde{X}_t - E_t] \cdot (1+j)^{1/2}
+
+\tilde{U}_t = (1+j) \cdot \tilde{U}_{t-1} + [P_t \cdot (1+\lambda)- \tilde{X}_t] \cdot (1+j)^{1/2}
