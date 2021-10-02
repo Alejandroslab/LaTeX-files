@@ -12,7 +12,7 @@ You will have to download TeX Live even if you are in Linux (in Mac you will hav
 After that in Atom download:
 
 'Latex' package to compile latex fiels inside Atom (https://atom.io/packages/latex) (package from tomasjo)
-'PDF View' package to preview the pdf files (you will be able to preview splitting the tabs)
+'PDF View' (from izuzak) package to preview the pdf files (you will be able to preview splitting the tabs)
 'Language-LaTeX' package (to highlighting in Atom. just to check syntax)
 
 after install everythiing, go to setting of package 'latex'
