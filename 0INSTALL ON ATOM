@@ -38,3 +38,6 @@ to do that
 click right on the pdf and select 'Split Right'
 
 Now you have your LaTeX editor right inside you Atom!
+
+USE NETWORK DRIVE AS FOLDER WITH LATEX AND Atom
+Remember to map your network drive otherwise you will not be able to run LaTeX as this does not support UNC paths
